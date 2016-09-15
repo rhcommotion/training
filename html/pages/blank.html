@@ -16,6 +16,15 @@
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/materialadmin.css?1425466319" />
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/font-awesome.min.css?1422529194" />
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/material-design-iconic-font.min.css?1421434286" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/wizard/wizard.css?1425466601" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/select2/select2.css?1424887856" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/multi-select/multi-select.css?1424887857" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/bootstrap-datepicker/datepicker3.css?1424887858" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/jquery-ui/jquery-ui-theme.css?1423393666" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/bootstrap-colorpicker/bootstrap-colorpicker.css?1424887860" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/bootstrap-tagsinput/bootstrap-tagsinput.css?1424887862" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/typeahead/typeahead.css?1424887863" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/dropzone/dropzone-theme.css?1424887864" />
 		<!-- END STYLESHEETS -->
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -153,7 +162,6 @@
 
 		<!-- BEGIN BASE-->
 		<div id="base">
-
 			<!-- BEGIN OFFCANVAS LEFT -->
 			<div class="offcanvas">
 			</div><!--end .offcanvas-->
@@ -167,14 +175,187 @@
 					<div class="section-header">
 						<ol class="breadcrumb">
 							<li><a href="../../html/.html">home</a></li>
-							<li class="active">Blank page</li>
+							<li class="active">Google form</li>
 						</ol>
 					</div><!--end .section-header -->
 					<div class="section-body">
 					</div><!--end .section-body -->
 				</section>
-
 				<!-- BEGIN BLANK SECTION -->
+			
+				<section>
+					<div class="section-body contain-lg">
+
+						<!-- BEGIN INTRO -->
+						<div class="row">
+							<div class="col-lg-12">
+								<h1 class="text-primary">Media Coverage Request Form</h1>
+							</div><!--end .col -->
+							<div class="col-lg-8">
+								<article class="margin-bottom-xxl">
+									<p class="lead" style="color:red">
+										* Required
+									</p>
+								</article>
+							</div><!--end .col -->
+						</div><!--end .row -->
+						<!-- END INTRO -->
+
+						<!-- BEGIN VALIDATION FORM WIZARD -->
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="card">
+									<div class="card-body ">
+										<div id="rootwizard2" class="form-wizard form-wizard-horizontal">
+											<form class="form floating-label form-validation" role="form" novalidate="novalidate">
+												<div class="form-wizard-nav">
+													<div class="progress"><div class="progress-bar progress-bar-primary"></div></div>
+													<ul class="nav nav-justified">
+														<li class="active"><a href="#step1" data-toggle="tab"><span class="step">1</span> <span class="title">Terms & Conditions</span></a></li>
+														<li><a href="#step2" data-toggle="tab"><span class="step">2</span> <span class="title">GENERAL INFORMATION</span></a></li>
+													</ul>
+												</div><!--end .form-wizard-nav -->
+												<div class="tab-content clearfix">
+													<div class="tab-pane active" id="step1">
+														<br><br>
+														<div class="form-group">
+															<div class="row">
+																<div class="col-sm-offset-2 col-sm-8">
+																	<ol>
+																		<li>RH Media Team aims to provide your activities and events with media support and coverage:
+																			<ul> 
+																				<li>Tech Team (Tech) - AVA Support</li>
+																				<li>Board of Photographers (BoP) - Photographers</li>
+																				<li>Meteors Workshops (MW) - Video Recording</li>
+																				<li>Phoenix Press (PP) - Coverage in RH Publication</li>
+																			</ul>
+																		</li>
+																		<li>To facilitate our work, please fill up this Request Form 2 WEEKS in advance.</li>
+																		<li><span style="color:red">* </span>To guarantee the support from Media Team, please fill up this Request Form 1 WEEKS in advance.</li>
+																		<li>Please understand that any last minute request will not be entertained because it is not possible to gather manpower in a very short time.</li>
+																		<li><span style="color:red">* </span>After filling the form, PLEASE confirm with the respective head about the task.</li>
+																		<li>For further clarification or enquiries, please contact the respective heads of Media Committees:
+																			<ul>
+																				<li>Jiacheng  (Media Director) - 9019 6905</li>
+																				<li>Xianyu  (Tech) - 8510 7372</li>
+																				<li>Marcus  (PP) - 9746 1029</li>
+																				<li>Yiran  (MW) - 9887 0023</li>
+																				<li>Marcus  (BoP) - 9746 1029</li>
+																			</ul>
+																		</li>
+																	</ol>
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row">
+																<div class="col-sm-offset-2 col-sm-8">
+																	<div class="checkbox">
+																		<label class="checkbox">
+																			<input type="checkbox" id="cb2" name="remember" required><span style="color:red">* </span>I agree to the abovementioned Terms and Conditions.
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div><!--end #step1 -->
+													<div class="tab-pane" id="step2">
+														<br/><br/>
+														<div class="form-group">
+															<input type="text" name="activity" id="activity" class="form-control" data-rule-minlength="5" required>
+															<label for="occupation" class="control-label">Requesting Activity<span style="color:red"> *</span><p class="help-block">eg: RH Dance, Basketball (F), Block 2 Comm</p></label>
+														</div>
+														<div class="form-group">
+															<input type="text" name="event" id="event" class="form-control" data-rule-minlength="2" required>
+															<label for="event" class="control-label">Event Name<span style="color:red"> *</span><p class="help-block">eg: Block Orientation, IHG - Soccer (F) Semifinals</p></label>
+														</div>
+														<div class="form-group control-width-normal">
+															<div class="input-group date" id="demo-date">
+																<div class="input-group-content">
+																	<input type="text" class="form-control" required>
+																	<label>Event Date<span style="color:red"> *</span><p class="help-block">Note: This date should be at least 2 weeks later</p></label>
+																</div>
+																<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-4">
+																<div class="form-group">
+																	<input type="text" class="form-control time-mask">
+																	<label>Event Start Time<span style="color:red"> *</span></label>
+																	<p class="help-block">Time: 24h</p>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-4">
+																<div class="form-group">
+																	<input type="text" class="form-control time-mask">
+																	<label>Event End Time<span style="color:red"> *</span></label>
+																	<p class="help-block">Time: 24h</p>
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<input type="text" name="location" id="location" class="form-control" data-rule-minlength="3" required>
+															<label for="location" class="control-label">Event Location<span style="color:red"> *</span><p class="help-block">For external venues, please include Postal Code</p></label>
+														</div>
+														<br>
+														<div class="form-group">
+															<label class="control-label" style="font-size:16px">Required Media Support<span style="color:red"> *</span></label>
+															<div class="row">
+																<div class="col-sm-9">
+																	<br>
+																<div class="checkbox checkbox-styled">
+																	<label>
+																		<input type="checkbox" value="">
+																		<span>Board of Photographers</span>
+																	</label>
+																</div>
+																<div class="checkbox checkbox-styled">
+																	<label>
+																		<input type="checkbox" value="">
+																		<span>Meteors Workshop</span>
+																	</label>
+																</div>
+																<div class="checkbox checkbox-styled">
+																	<label>
+																		<input type="checkbox" value="">
+																		<span>Phoenix Press</span>
+																	</label>
+																</div>
+																<div class="checkbox checkbox-styled">
+																	<label>
+																		<input type="checkbox" value="">
+																		<span>RH Tech Team</span>
+																	</label>
+																</div>
+																</div>
+															</div><!--end .col -->
+														</div><!--end .form-group -->
+														<div class="form-group">
+															<textarea name="textarea13" id="textarea13" class="form-control" rows="3" placeholder=""></textarea>
+															<label for="description" class="control-label">Event Description and Other Comments<p class="help-block">eg.: event scale(guest number? external guest?), nature of event (formal/informal)</p></label>
+														</div>
+													</div><!--end #step2 -->
+												</div><!--end .tab-content -->
+												<ul class="pager wizard">
+													<li class="previous first"><a class="btn-raised" href="javascript:void(0);">First</a></li>
+													<li class="previous"><a class="btn-raised" href="javascript:void(0);">Previous</a></li>
+													<li class="next last"><a class="btn-raised" href="javascript:void(0);">Last</a></li>
+													<li class="next"><a class="btn-raised" href="javascript:void(0);">Next</a></li>
+												</ul>
+											</form>
+										</div><!--end #rootwizard -->
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+								<em class="text-caption">Form wizard with validation</em>
+							</div><!--end .col -->
+						</div><!--end .row -->
+						<!-- END VALIDATION FORM WIZARD -->
+
+					</div><!--end .section-body -->
+				</section>
 			</div><!--end #content-->
 			<!-- END CONTENT -->
 
@@ -673,13 +854,23 @@
 					</div><!--end .offcanvas-body -->
 				</div><!--end .offcanvas-pane -->
 				<!-- END OFFCANVAS CHAT -->
-
 			</div><!--end .offcanvas-->
 			<!-- END OFFCANVAS RIGHT -->
 
 		</div><!--end #base-->
 		<!-- END BASE -->
-
+<script>
+p._initInputMask = function () {
+		if (!$.isFunction($.fn.inputmask)) {
+			return;
+		}
+		$(":input").inputmask();
+		$(".form-control.dollar-mask").inputmask('$ 999,999,999.99', {numericInput: true, rightAlignNumerics: false});
+		$(".form-control.euro-mask").inputmask('€ 999.999.999,99', {numericInput: true, rightAlignNumerics: false});
+		$(".form-control.time-mask").inputmask('h:s', {placeholder: 'hh:mm'});
+		$(".form-control.time12-mask").inputmask('hh:mm t', {placeholder: 'hh:mm xm', alias: 'time12', hourFormat: '12'});
+	};
+</script>
 		<!-- BEGIN JAVASCRIPT -->
 		<script src="../../assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
 		<script src="../../assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
@@ -695,6 +886,22 @@
 		<script src="../../assets/js/core/source/AppNavSearch.js"></script>
 		<script src="../../assets/js/core/source/AppVendor.js"></script>
 		<script src="../../assets/js/core/demo/Demo.js"></script>
+		<script src="../../assets/js/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="../../assets/js/libs/jquery-validation/dist/additional-methods.min.js"></script>
+		<script src="../../assets/js/libs/wizard/jquery.bootstrap.wizard.min.js"></script>
+		<script src="../../assets/js/core/demo/DemoFormWizard.js"></script>
+		<script src="../../assets/js/libs/jquery-ui/jquery-ui.min.js"></script>
+		<script src="../../assets/js/libs/select2/select2.min.js"></script>
+		<script src="../../assets/js/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+		<script src="../../assets/js/libs/multi-select/jquery.multi-select.js"></script>
+		<script src="../../assets/js/libs/inputmask/jquery.inputmask.bundle.min.js"></script>
+		<script src="../../assets/js/libs/moment/moment.min.js"></script>
+		<script src="../../assets/js/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+		<script src="../../assets/js/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+		<script src="../../assets/js/libs/typeahead/typeahead.bundle.min.js"></script>
+		<script src="../../assets/js/libs/dropzone/dropzone.min.js"></script>
+		<script src="../../assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+		<script src="../../assets/js/core/demo/DemoFormComponents.js"></script>
 		<!-- END JAVASCRIPT -->
 
 	</body>
