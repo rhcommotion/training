@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Material Admin - Blank page</title>
+		<title>Raffles Hall</title>
 
 		<!-- BEGIN META -->
 		<meta charset="utf-8">
@@ -16,6 +16,14 @@
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/materialadmin.css?1425466319" />
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/font-awesome.min.css?1422529194" />
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/material-design-iconic-font.min.css?1421434286" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/select2/select2.css?1424887856" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/multi-select/multi-select.css?1424887857" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/bootstrap-datepicker/datepicker3.css?1424887858" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/jquery-ui/jquery-ui-theme.css?1423393666" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/bootstrap-colorpicker/bootstrap-colorpicker.css?1424887860" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/bootstrap-tagsinput/bootstrap-tagsinput.css?1424887862" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/typeahead/typeahead.css?1424887863" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/dropzone/dropzone-theme.css?1424887864" />
 		<!-- END STYLESHEETS -->
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,7 +32,7 @@
 		<script type="text/javascript" src="../../assets/js/libs/utils/respond.min.js?1403934956"></script>
 		<![endif]-->
 	</head>
-	<body class="menubar-hoverable header-fixed menubar-pin ">
+	<body class="menubar-hoverable header-fixed ">
 
 		<!-- BEGIN HEADER-->
 		<header id="header" >
@@ -161,20 +169,362 @@
 
 			<!-- BEGIN CONTENT-->
 			<div id="content">
-
-				<!-- BEGIN BLANK SECTION -->
 				<section>
-					<div class="section-header">
-						<ol class="breadcrumb">
-							<li><a href="../../html/.html">home</a></li>
-							<li class="active">Blank page</li>
-						</ol>
-					</div><!--end .section-header -->
-					<div class="section-body">
+					<div class="section-body contain-lg">
+
+						<!-- BEGIN INTRO -->
+						<div class="row">
+							<div class="col-lg-12">
+								<h1 class="text-primary">Media Coverage Request Form</h1>
+							</div><!--end .col -->
+							<div class="col-lg-8">
+								<article class="margin-bottom-xxl">
+									<p class="lead">
+										*Required
+									</p>
+								</article>
+							</div><!--end .col -->
+						</div><!--end .row -->
+						<!-- END INTRO -->
+
+						<!-- BEGIN AUTOCOMPLETE -->
+						<div class="row">
+							<div class="col-lg-12">
+								<h4>General Infomation</h4>
+							</div><!--end .col -->
+							
+							<div class="col-lg-offset-1 col-md-8">
+								<div class="card">
+									<div class="card-body">
+										<form class="form">
+											<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="eg: RH Dance, Basketball (F), Block 2 Comm">
+												<label>Requesting Activities</label>
+											</div>
+											<div class="form-group">
+												<input type="text" id="autocomplete2" class="form-control" data-source="data/countries.json" placeholder="eg: Block Orientation, IHG - Soccer (F) Semifinals">
+												<label>Event Name</label>
+											</div>
+
+										</form>
+
+										<form class="form">
+											<div class="form-group">
+												<div class="input-daterange input-group" id="demo-date-range">
+													<div class="input-group-content">
+														<input type="text" class="form-control" name="start" />
+														<label>Event Date(2 weeks later)</label>
+													</div>
+													
+													<div class="input-group-content">
+														
+													</div>
+												</div>
+											</div>
+										</form>
+
+
+										<form class="form">
+											<div class="form-group">
+												<div class="input-daterange input-group" id="demo-date-range">
+													<div class="form-group">
+												<input type="text" class="form-control time12-mask">
+												<label>Event Time</label>
+												
+													</div>
+													<span class="input-group-addon">to</span>
+													<div class="form-group">
+												<input type="text" class="form-control time12-mask">
+												<p class="help-block">Time: am/pm</p>
+													</div>
+												</div>
+											</div>
+										</form>
+										<form class="form">
+											<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="For external venues, please include Postal Code.">
+												<label>Event Location</label>
+											</div>
+										</form>
+										<form class="form">
+											<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="Event scale/expected number of attendees (with external guest?), nature of event...">
+												<label>Event Description and Other Comments</label>
+											</div>
+										</form>
+										</div><!--end .card-body -->
+								</div><!--end .card -->
+								</div><!--end .card-body -->
+								</div><!--end .card -->
+
+						<!-- Begin Media Support MULTI-SELECT -->
+						<div class="row">
+							<div class="col-lg-12">
+								<h4>Required Media Support</h4>
+							</div>
+							<div class="col-lg-offset-1 col-md-8">
+								<div class="card">
+									<div class="card-body">
+										<form class="form">
+											<select id="optgroup" multiple="multiple">
+												
+													<option value="BP">Board of Photographers</option>
+													<option value="MW">Metors Workshop</option>
+													<option value="PP">Phoenix Press</option>
+													<option value="TT">RH Tech Team</option>
+											</select>
+										</form>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .col -->
+						</div><!--end .row -->
+						<!-- Begin Media Support MULTI-SELECT -->
+
+									
+
+
+						<!-- BEGIN COLORPICKER -->
+						<div class="row">
+							<div class="col-lg-12">
+								<h4>Event Contact Person</h4>
+							</div><!--end .col -->
+							<div class="col-lg-offset-1 col-md-8">
+								<div class="card">
+									<div class="card-body">
+										<form class="form">
+
+											<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="Name">
+												<label>Name</label>
+											</div>
+											<div class="form-group">
+												<input type="text" id="autocomplete2" class="form-control" data-source="data/countries.json" placeholder="HP Number">
+												<label>HP Number</label>
+											</div>
+
+											<div class="form-group">
+												<input type="text" id="autocomplete2" class="form-control" data-source="data/countries.json" placeholder="Personal Email">
+												<label>Personal Email</label>
+											</div>
+
+										</form>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+								</div>
+								</div>
+
+														<!-- BEGIN COLORPICKER -->
+						<div class="row">
+							<div class="col-lg-12">
+								<h4>RH Tech Team Detail Form</h4>
+							</div><!--end .col -->
+							<div class="col-lg-12">
+								
+									<p>
+										For events held outside RH Communal Hall, please specify the requirement of your event under 'Portable Tech Support'.
+
+									</p>
+							</div>
+
+						<div class="row">
+							<div class="col-lg-offset-1 col-md-8">
+								<div class="card">
+									<div class="card-body">
+
+										<form class="form">
+
+											<div class="form-group">
+												<select class="form-control select2-list" data-placeholder="Select an item" multiple>
+													
+														<option value="PM">Portable Mic only (for speaking only)</option>
+
+														<option value="PS">Portable Sound system (for music/audio)</option>
+
+														<option value="PP">Portable Projector and Screen (for video)</option>
+
+														<option value="NO">NO portable tech support required</option>
+
+												
+													
+												</select>
+												<label>Portable Tech Support</label>
+											</div>
+											
+										
+											<div class="form-group">
+												<input type="text" id="autocomplete2" class="form-control" data-source="data/countries.json" placeholder="Minimum 3 tech crew is required for events with performances">
+												<label>No. of tech team member required</label>
+											</div>
+
+											
+											<div class="form-group">
+												<div class="input-daterange input-group" id="demo-date-range">
+													<div class="input-group-content">
+														<input type="text" class="form-control" name="start" />
+														<label>Tech Run Date(one or two days before event)</label>
+													</div>
+													
+													<div class="input-group-content">
+														
+													</div>
+												</div>
+											</div>
+											
+											<div class="form-group">
+												<div class="input-daterange input-group" id="demo-date-range">
+													<div class="form-group">
+												<input type="text" class="form-control time12-mask">
+												<label>Tech Run Time</label>
+												
+													</div>
+													
+												<p class="help-block">Time: am/pm</p>
+													</div>
+											</div>
+
+										
+											<div class="form-group">
+												<div class="input-daterange input-group" id="demo-date-range">
+													<div class="input-group-content">
+														<input type="text" class="form-control" name="start" />
+														<label>Sound Check Date</label>
+													</div>
+													
+													<div class="input-group-content">
+													</div>
+												</div>
+											</div>
+										
+
+										
+											<div class="form-group">
+												<div class="input-daterange input-group" id="demo-date-range">
+													<div class="form-group">
+												<input type="text" class="form-control time12-mask">
+												<label>Sound Check Time</label>
+												
+													</div>
+													
+												<p class="help-block">Time: am/pm</p>
+													</div>
+												</div>
+											
+									
+
+							
+											<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="max 6">
+												<label>Wired Mics - singing and speaking</label>
+											</div>
+										
+											<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="max 6">
+												<label>Condenser Mics - musical instruments</label>
+											</div>
+									
+											<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="max 2">
+												<label>Wireless Mics - emcee or mobile presenter</label>
+											</div>
+										
+											<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="max 5">
+												<label>Instrument Outputs (with Quarter Cables)</label>
+											</div>
+
+
+											<div class="form-group">
+												<select class="form-control select2-list" data-placeholder="Select an item">
+													
+														<option value="AK">Video</option>
+														<option value="HI">Audio</option>
+												</select>
+												<label>Laptop Video and Audio</label>
+											</div>
+
+										<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="eg: Extra tech equipments; if not applicable, pls state N/A.">
+												<label>Special request for RH tech team</label>
+											</div>
+									
+										</form>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+								</div>
+								</div>
+
+
+
+						<div class="row">
+							<div class="col-lg-12">
+								<h4>RH BOP, RH MW, and RH Phoenix Press Detail Form</h4>
+							</div><!--end .col -->
+							<div class="col-lg-12">
+								
+									<p>
+										*Please be serious about this. Last minute change is risky. Any updates must be made known to the person in-charge assigned to your activity.
+
+									</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-offset-1 col-md-8">
+								<div class="card">
+									<div class="card-body">
+
+										<form class="form">
+
+											<div class="form-group">
+												<select class="form-control select2-list" data-placeholder="Select an item">
+													
+														<option value="AK">Sports</option>
+														<option value="HI">Cultural Performance</option>
+														<option value="HI">Event Coverage</option>
+														<option value="HI">Special Video, Photoshoot, or Writeup Project</option>
+														<option value="HI">Others</option>
+
+												</select>
+												<label>Type of Event</label>
+											</div>
+
+											<div class="form-group">
+												<select id="optgroup" multiple="multiple">
+												
+													<option value="PM">Low Light (eg: outdoor night sports event)</option>
+													<option value="PS">Long Range (We can only shoot from afar)</option>
+													<option value="PPS">Audio Recording is Essential</option>
+													<option value="NIL">Other</option>
+												</select>
+
+												<label>Event Condition</label>
+											</div>
+
+											
+										
+											<div class="form-group">
+												<input type="text" id="autocomplete2" class="form-control" data-source="data/countries.json" placeholder="1 (for sports event);2 (for normal hall events)">
+												<label>No. of BOP Photographers Required</label>
+											</div>
+
+											<div class="form-group">
+												<input type="text" id="autocomplete2" class="form-control" data-source="data/countries.json" placeholder="max 2">
+												<label>No. of MW Videographers Required</label>
+											</div>
+
+
+										<form class="form">
+											<div class="form-group">
+												<input type="text" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="Your Answer">
+												<label>Special request for BOP, MW, and /or Phoenix Press?</label>
+											</div>
+									
+										</form>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+
+
 					</div><!--end .section-body -->
 				</section>
-
-				<!-- BEGIN BLANK SECTION -->
 			</div><!--end #content-->
 			<!-- END CONTENT -->
 
@@ -289,7 +639,7 @@
 							<!--start submenu -->
 							<ul>
 								<li><a href="../../html/forms/basic.html" ><span class="title">Form basic</span></a></li>
-								<li><a href="../../html/forms/advanced.html" ><span class="title">Form advanced</span></a></li>
+								<li><a href="../../html/forms/advanced.html" class="active"><span class="title">Raffles Hall</span></a></li>
 								<li><a href="../../html/forms/layouts.html" ><span class="title">Form layouts</span></a></li>
 								<li><a href="../../html/forms/editors.html" ><span class="title">Editors</span></a></li>
 								<li><a href="../../html/forms/validation.html" ><span class="title">Form validation</span></a></li>
@@ -356,7 +706,7 @@
 								<li><a href="../../html/pages/maps.html" ><span class="title">Maps</span></a></li>
 								<li><a href="../../html/pages/locked.html" ><span class="title">Lock screen</span></a></li>
 								<li><a href="../../html/pages/login.html" ><span class="title">Login</span></a></li>
-								<li><a href="../../html/pages/blank.html" class="active"><span class="title">Blank page</span></a></li>
+								<li><a href="../../html/pages/blank.html" ><span class="title">Blank page</span></a></li>
 							</ul><!--end /submenu -->
 						</li><!--end /menu-li -->
 						<!-- END FORMS -->
@@ -683,9 +1033,19 @@
 		<!-- BEGIN JAVASCRIPT -->
 		<script src="../../assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
 		<script src="../../assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+		<script src="../../assets/js/libs/jquery-ui/jquery-ui.min.js"></script>
 		<script src="../../assets/js/libs/bootstrap/bootstrap.min.js"></script>
 		<script src="../../assets/js/libs/spin.js/spin.min.js"></script>
 		<script src="../../assets/js/libs/autosize/jquery.autosize.min.js"></script>
+		<script src="../../assets/js/libs/select2/select2.min.js"></script>
+		<script src="../../assets/js/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+		<script src="../../assets/js/libs/multi-select/jquery.multi-select.js"></script>
+		<script src="../../assets/js/libs/inputmask/jquery.inputmask.bundle.min.js"></script>
+		<script src="../../assets/js/libs/moment/moment.min.js"></script>
+		<script src="../../assets/js/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+		<script src="../../assets/js/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+		<script src="../../assets/js/libs/typeahead/typeahead.bundle.min.js"></script>
+		<script src="../../assets/js/libs/dropzone/dropzone.min.js"></script>
 		<script src="../../assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
 		<script src="../../assets/js/core/source/App.js"></script>
 		<script src="../../assets/js/core/source/AppNavigation.js"></script>
@@ -695,6 +1055,7 @@
 		<script src="../../assets/js/core/source/AppNavSearch.js"></script>
 		<script src="../../assets/js/core/source/AppVendor.js"></script>
 		<script src="../../assets/js/core/demo/Demo.js"></script>
+		<script src="../../assets/js/core/demo/DemoFormComponents.js"></script>
 		<!-- END JAVASCRIPT -->
 
 	</body>
