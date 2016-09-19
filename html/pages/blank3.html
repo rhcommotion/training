@@ -165,50 +165,93 @@
 
 				<form method="post", action="blank1.html" >
 		<h1>Raffles Hall-Media Coverage Request Form</h1>
-		<p>Please read through the terms and conditions carefully.</p>
+		
 		<p style="color:red">*Required</p>
 		<div>
-			<h2>Terms and Conditions</h2>
-			<ol>
-				<li> RH Media Team aims to provide your activities and events with media support and coverage:</li>
-					<p style="margin-left: 40px">Tech Team (Tech)            -AVA Support</p>
-					<p style="margin-left: 40px">Board of Photographers(BoP) -Photographers</p>
-					<p style="margin-left: 40px">Meteors Workshops(MW)       -Video Recording</p>
-					<p style="margin-left: 40px">Phoenix Press(PP)           -Coverage in RH Publication</p>
-					
-				<ul style="list-style:none">
-					<!--comment not used anymore
-					<li><pre>Tech Team (Tech)            -AVA Support</pre></li>
-					<li><pre>Board of Photographers(BoP) -Photographers</pre></li>
-					<li><pre>Meteors Workshops(MW)       -Video Recording</pre></li>
-					<li><pre>Phoenix Press(PP)           -Coverage in RH Publication</pre></li>-->
-				</ul>
-				<br><br>
-				<li>To facilitate our work, please fill up this Request Form 2 WEEKS in advance. </li><br>
-				<li>To guarantee the support from Media Team, please fill up this Request Form 1 WEEKS in advance.</li><br>
-				<li> Please understand that any last minute request will not be entertained because it is not possible to gather manpower in a very short time.</li><br>
-				<li> After filling the form, PLEASE confirm with the respective head about the task.</li><br>
-				<li>For further clarification or enquiries, please contact the respective heads of Media Committees:</li>
-				
-					<p style="margin-left: 40px">Jiacheng (Media Director)  -9019 6905</p>
-					<p style="margin-left: 40px">Xianyu (Tech)              -8510 7372</p>
-					<p style="margin-left: 40px">Marcus (PP)                -9746 1029</p>
-					<p style="margin-left: 40px">Yiran (MW)                 -9887 0023</p>
-					<p style="margin-left: 40px">Marcus (BoP)               -9746 1029</p>
-			</ol>
-			
+			<h2>RH Tech Team Detail Form</h2>
+			<p>For events held outside RH Communal Hall, please specify the requirement of your event under 'Portable Tech Support'.</p>
+			<h3>Portable Tech Support<span = style="color:red">*</span></h3>
+			<p>**For event held outside comm hall</p>
+			<input type="checkbox" name="tech"> Portable Mic only (for speaking only)<br>
+			<input type="checkbox" name="tech">Portable Sound system (for music/audio)<br>
+			<input type="checkbox" name="tech">Portable Projector and Screen (for video)<br>
+			<input type="checkbox" name="tech">NO portable tech support required<br>
 		</div>
 		<div>
-			<h2>Raffles Hall Media</h2>
-			<center><img src="https://lh3.googleusercontent.com/KRmBK_1_2ExqIoiK-P5oLhZKedoUf_glV1Rb55Chg9Wsj1HeeFLK55l_iSYWtrnHbSU6Tf9IFA" height="300px" width="400px" /></center><br>
-			<h2>I agree to the abovementioned Terms and Conditions. <span style="color:red">*</span> 
-			</h2>
+			<h3>No. of tech team member required<span = style="color:red">*</span></h3>
+			<p>Minimum 3 tech crew is required for events with performances.</p>
+			<select name="number">
+  				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				
+			</select>
+		</div>
+		<div>
+			<h3>Tech Run (for events with performances)</h3>
+			<p>This should be held one or two days before event.</p>
+
+			<input type="date" name="date"><input type="time" name="time">
+		</div>
+		<div>
+			<h3>Sound Check<span = style="color:red">*</span></h3>
+			<p>This should be held a few hours before event.</p>
 			
-			<input type="radio" name="accept" value="Yes, I do." required>Yes, I do.<br>
-			<input type="submit" value="Next" >
-			<input type="hidden" name="redirect" value="blank1.html">
+			<input type="date" name="date"><input type="time" name="time">
+		</div>
+		<div>
+			<h3>Wired Mics<span = style="color:red">*</span></h3>
+			<p>For vocal purposes - singing and speaking (max 6)</p>
+			<input type="radio" name="mics">0<br>
+			<input type="radio" name="mics">1<br>
+			<input type="radio" name="mics">2<br>
+			<input type="radio" name="mics">3<br>
+			<input type="radio" name="mics">4<br>
+			<input type="radio" name="mics">5<br>
+			<input type="radio" name="mics">6<br>
+		</div>
+		<div>
+			<h3>Condenser Mics<span = style="color:red">*</span></h3>
+			<p>For musical instruments(violin, viola, drums, piano) or group singing (max 6)</p>
+			<input type="radio" name="mics">0<br>
+			<input type="radio" name="mics">1<br>
+			<input type="radio" name="mics">2<br>
+			<input type="radio" name="mics">3<br>
+			<input type="radio" name="mics">4<br>
+			<input type="radio" name="mics">5<br>
+			<input type="radio" name="mics">6<br>
+		</div>
+		<div>
+			<h3>Wireless Mics<span = style="color:red">*</span></h3>
+			<p>For emcee or mobile presenter (max 2)</p>
+			<select name="number">
+  				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				
+			</select>
 
 		</div>
+		<div>
+			<h3>Instrument Outputs (with Quarter Cables) <span = style="color:red">*</span></h3>
+			<p>For keyboards, acoustic guitars (with ports),</p>
+			<select name="number">
+  				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				
+			</select>
+
+		</div>
+		<div>
+			<h3>Special request for RH tech team<span = style="color:red">*</span></h3>
+			<p>eg: Extra tech equipments; if not applicable, pls state N/A.</p>
+			<input type="text" name="extra" style="width:500px">
+		</div>
+
 
 	</form>	
 	</div>

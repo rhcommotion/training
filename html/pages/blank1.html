@@ -16,6 +16,9 @@
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/materialadmin.css?1425466319" />
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/font-awesome.min.css?1422529194" />
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/material-design-iconic-font.min.css?1421434286" />
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+
+	</head>
 		<!-- END STYLESHEETS -->
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -158,59 +161,86 @@
 			<div class="offcanvas">
 			</div><!--end .offcanvas-->
 			<!-- END OFFCANVAS LEFT -->
-
-			<!-- BEGIN CONTENT-->
-			<div id="content">
-			<div style="margin-left:70px">
-
-				<form method="post", action="blank1.html" >
+		<div style="margin-left:70px">
+			<form method="post", action="blank2.html">
+		
+		<div>
+		
 		<h1>Raffles Hall-Media Coverage Request Form</h1>
-		<p>Please read through the terms and conditions carefully.</p>
+		<h1>Raffles Hall-Media Coverage Request Form</h1>
 		<p style="color:red">*Required</p>
-		<div>
-			<h2>Terms and Conditions</h2>
-			<ol>
-				<li> RH Media Team aims to provide your activities and events with media support and coverage:</li>
-					<p style="margin-left: 40px">Tech Team (Tech)            -AVA Support</p>
-					<p style="margin-left: 40px">Board of Photographers(BoP) -Photographers</p>
-					<p style="margin-left: 40px">Meteors Workshops(MW)       -Video Recording</p>
-					<p style="margin-left: 40px">Phoenix Press(PP)           -Coverage in RH Publication</p>
-					
-				<ul style="list-style:none">
-					<!--comment not used anymore
-					<li><pre>Tech Team (Tech)            -AVA Support</pre></li>
-					<li><pre>Board of Photographers(BoP) -Photographers</pre></li>
-					<li><pre>Meteors Workshops(MW)       -Video Recording</pre></li>
-					<li><pre>Phoenix Press(PP)           -Coverage in RH Publication</pre></li>-->
-				</ul>
-				<br><br>
-				<li>To facilitate our work, please fill up this Request Form 2 WEEKS in advance. </li><br>
-				<li>To guarantee the support from Media Team, please fill up this Request Form 1 WEEKS in advance.</li><br>
-				<li> Please understand that any last minute request will not be entertained because it is not possible to gather manpower in a very short time.</li><br>
-				<li> After filling the form, PLEASE confirm with the respective head about the task.</li><br>
-				<li>For further clarification or enquiries, please contact the respective heads of Media Committees:</li>
-				
-					<p style="margin-left: 40px">Jiacheng (Media Director)  -9019 6905</p>
-					<p style="margin-left: 40px">Xianyu (Tech)              -8510 7372</p>
-					<p style="margin-left: 40px">Marcus (PP)                -9746 1029</p>
-					<p style="margin-left: 40px">Yiran (MW)                 -9887 0023</p>
-					<p style="margin-left: 40px">Marcus (BoP)               -9746 1029</p>
-			</ol>
-			
+		<h2>General Information</h2>
+		</div>
+		<h3>Requesting Activity<span style="color:red">*</span></h3>
+		<p>eg: RH Dance, Basketball(F), Block 2 Comm</p>
+		<div class="group">
+			<input type="text" required>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label>Your answer</label>
+		</div>
+		<h3>Event Name<span style="color:red">*</span></h3>
+		<p>eg: Block Orientation, IHG - Soccer (F) Semifinals</p>
+		<div class="group">
+			<input type="text" required>
+			<span class="highlight"></span>
+			<span class="bar"></span>
+			<label>Your answer</label>
 		</div>
 		<div>
-			<h2>Raffles Hall Media</h2>
-			<center><img src="https://lh3.googleusercontent.com/KRmBK_1_2ExqIoiK-P5oLhZKedoUf_glV1Rb55Chg9Wsj1HeeFLK55l_iSYWtrnHbSU6Tf9IFA" height="300px" width="400px" /></center><br>
-			<h2>I agree to the abovementioned Terms and Conditions. <span style="color:red">*</span> 
-			</h2>
-			
-			<input type="radio" name="accept" value="Yes, I do." required>Yes, I do.<br>
-			<input type="submit" value="Next" >
-			<input type="hidden" name="redirect" value="blank1.html">
-
+			<h3>Event Date<span style="color:red">*</span></h3>
+			<p>Note: This date should be 2 weeks later than today's date.</p>
+			<p>Date</p>
+			<input type="date">
+			<span class="bar"></span>
 		</div>
+		<div>
+			<h3>Event Start Time<span style="color:red">*</span></h3>
+			<input type="time" required="">
+			<span class="bar"></span>
+		</div>
+		<div>
+			<h3>Event End Time<span style="color:red">*</span></h3>
+			<input type="time" required="">
+			<span class="bar"></span>
+		</div>
+		<div>
+			<h3>Event Location<span style="color:red">*</span></h3>
+			<p>For external venues, please include Postal Code.</p>
+			<input type="date">
+			<span class="bar"></span>
+			<label>Your answer</label>
+		</div>
+		<div>
+			<h3>Required Media Support<span style="color:red">*</span></h3>
+			<div>
+			 
+			 <input type="checkbox" name="mediaCCA" >Board of Photographers<br>
+			 <input type="checkbox" name="mediaCCA"> Meteors Workshop<br>
+			 <input type="checkbox" name="mediaCCA"> Phoenix Press<br>
+			  <input type="checkbox" name="mediaCCA"> RH Tech Team<br>
+			 </div>
+		</div>
+		<div>
+			<div>
+			<h3>Event Description and Other Comments</h3>
+			<p>eg.: event scale/expected number of attendees (with external guest?), nature of event (formal/informal)...</p>
+			<h1  style="width:1000px"; >
+			<textarea rows="4" cols="100" style="font-size:16px">
+			</textarea>
+			<span class="bar"></span>
+			</h1>
+			</div>
+		</div>
+		<br>
+		<p></p>
 
-	</form>	
+			<input type="submit" value="Next" style= "width:150px">
+			<div id="content">
+			</div>
+
+		</form>
+
 	</div>
 				<section>
 					<div class="section-header">
